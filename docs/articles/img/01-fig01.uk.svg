@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="color:#10201C" viewBox="0 0 880 412" role="img" aria-label="Вкладені розмови: цикл диспетчера містить усередині кроку 2 цілий цикл calc_agent, а той містить виклик функції calc"><rect x="0.0" y="0.0" width="880.0" height="412.0" fill="#FFFFFF"/>
+  <g font-family="JetBrains Mono, ui-monospace, monospace" fill="currentColor">
+    <g font-size="10" opacity=".45">
+      <text x="26" y="56">0</text><text x="26" y="146">1</text><text x="26" y="230">2</text>
+    </g>
+    <rect x="48" y="34" width="800" height="344" rx="5" fill="none" stroke="currentColor" stroke-opacity=".3"/>
+    <text x="66" y="56" font-size="10.5" letter-spacing="1" opacity=".55">SUPERVISOR · РОЗМОВА 1</text>
+    <g font-size="12.5">
+      <text x="70" y="86">1  →  <tspan opacity=".6">питання:</tspan> "What is 15 * 4?"</text>
+      <text x="70" y="110">2  ←  <tspan opacity=".6">прошу:</tspan> calc_agent { task: "Compute 15 * 4" }<tspan opacity=".55">   ·   tool_use</tspan></text>
+    </g>
+    <rect x="96" y="126" width="730" height="186" rx="5" fill="none" stroke="currentColor" stroke-opacity=".3"/>
+    <text x="114" y="148" font-size="10.5" letter-spacing="1" opacity=".55">CALC_AGENT · РОЗМОВА 2 · ВЛАСНА ІСТОРІЯ</text>
+    <g font-size="12.5">
+      <text x="118" y="178">1  →  <tspan opacity=".6">завдання:</tspan> "Compute 15 * 4"</text>
+      <text x="118" y="202">2  ←  <tspan opacity=".6">прошу:</tspan> calc { expression: "15 * 4" }<tspan opacity=".55">   ·   tool_use</tspan></text>
+    </g>
+    <rect x="140" y="216" width="660" height="52" rx="5" fill="none" stroke="#BB4E17" stroke-opacity=".85"/>
+    <text x="158" y="238" font-size="10.5" letter-spacing="1" fill="#BB4E17" opacity=".9">CALC · ФУНКЦІЯ</text>
+    <text x="158" y="257" font-size="12.5">3  →  "15 * 4 = 60"<tspan opacity=".55">   ·   3 мс   ·   $0   ·   моделі тут немає</tspan></text>
+    <text x="118" y="294" font-size="12.5">4  ←  "Expression: 15 * 4 · Result: 60"<tspan opacity=".55">   ·   end_turn</tspan></text>
+    <g font-size="12.5">
+      <text x="70" y="338">3  →  <tspan opacity=".6">результат:</tspan> "Expression: 15 * 4 · Result: 60"</text>
+      <text x="70" y="362">4  ←  "15 * 4 = 60"<tspan opacity=".55">   ·   end_turn</tspan></text>
+    </g>
+  </g>
+</svg>

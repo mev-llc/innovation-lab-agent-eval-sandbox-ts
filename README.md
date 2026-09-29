@@ -100,6 +100,11 @@ formula but merges documents by `pageContent` — and the vector store's text ca
 `passage:` prefix that BM25's does not, so the fusion silently never happens. See the
 comment at the top of `src/agents/retriever/tools/hybrid.ts`.
 
+## Articles
+
+A three-part series built on this sandbox — topology, retrieval, evaluation — in English
+and Ukrainian: [`docs/articles/`](docs/articles/README.md).
+
 ## Known rough edges
 
 `@arizeai/phoenix-client@7.8.0` keeps a stale optional peer on
